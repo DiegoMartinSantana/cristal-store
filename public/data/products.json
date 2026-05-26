@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "Mechanical RGB Keyboard",
+    "description": "Blue switches for perfect tactile feedback and customizable backlighting.",
+    "image": "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?w=500",
+    "price": 59.99
+  },
+  {
+    "id": 2,
+    "title": "Noise Cancelling Headphones",
+    "description": "Wireless with active noise cancellation and up to 30 hours of battery life.",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500",
+    "price": 129.50
+  },
+  {
+    "id": 3,
+    "title": "4K Gaming Monitor",
+    "description": "27-inch display with a 144Hz refresh rate for absolute smoothness.",
+    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=500",
+    "price": 399.00
+  },
+  {
+    "id": 4,
+    "title": "Ergonomic Mouse",
+    "description": "High-precision optical sensor and a design built for long work sessions.",
+    "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500",
+    "price": 25.00
+  },
+  {
+    "id": 5,
+    "title": "Premium Gaming Chair",
+    "description": "Lumbar support, 4D armrests, and high-quality materials for maximum comfort.",
+    "image": "https://webobjects2.cdw.com/is/image/CDW/5423991?$product-main$",
+    "price": 210.75
+  },
+  {
+    "id": 6,
+    "title": "USB Condenser Microphone",
+    "description": "Studio-quality sound for streaming and podcasting with simple plug-and-play setup.",
+    "image": "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=500",
+    "price": 85.00
+  },
+  {
+    "id": 7,
+    "title": "Aluminum Laptop Stand",
+    "description": "Adjustable height and heat dissipation design for better neck posture and cooling.",
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_792595-CBT106449144439_022026-P.webp",
+    "price": 34.50
+  },
+  {
+    "id": 8,
+    "title": "Extended Mouse Pad",
+    "description": "Water-resistant micro-textured cloth surface with anti-slip rubber base.",
+    "image": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500",
+    "price": 19.99
+  }
+]
