@@ -1,13 +1,18 @@
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 import { useCart } from "../../context/CartContext";
-function Product({ id, title, description, image, price }) {
 
-    const product={id, title, description, image, price};
-    const quantity=1;
+function Product({ id, title, description, image, price, category, stock }) {
+    const product = { id, title, description, image, price, category, stock };
+    const quantity = 1;
     const { addToCart } = useCart();
+
     //stock handler
     const handleAddToCart = () => {
+        if (stock === 0) {
+            alert("No hay stock disponible");
+            return;
+        }
         addToCart(product, quantity);
     };
 
@@ -27,7 +32,12 @@ function Product({ id, title, description, image, price }) {
                         <h2 className="font-semibold  leading-tight"> {title}</h2>
                         <span className="font-bold  ">${price}</span>
                     </div>
-
+                    <div className="flex justify-between items-center mt-1">
+                        <span className="text-xs text-slate-400">Categoría: {category}</span>
+                        <span className={`text-xs font-medium ${stock > 0 ? "text-green-600" : "text-red-500"}`}>
+                            Stock: {stock}
+                        </span>
+                    </div>
                     <p className="mt-2 text-sm text-slate-500">{description}</p>
                     <button className="mt-4 w-full py-2.5  text-sm font-medium bg-slate-700 text-white  rounded-lg hover:scale-103  transition-transform duration-500  ">
                         <Link to={`/product/${id}`}>Ver detalles</Link>
@@ -36,12 +46,11 @@ function Product({ id, title, description, image, price }) {
                         <button
                             onClick={handleAddToCart}
                             className="flex items-center justify-center gap-2 mt-4 w-full py-2.5 rounded-lg text-sm font-medium  bg-gray-100 400 hover:bg-gray-200  shadow-sm transition-all duration-500 hover:scale-102"
+                            disabled={stock === 0}
                         >
                             Añadir al carrito
                             <ShoppingCartIcon className="w-6 text-primary-500" />
                         </button>
-
-
                     </div>
                 </div>
             </div>

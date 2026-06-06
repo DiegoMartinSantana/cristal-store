@@ -40,8 +40,19 @@ export default function ProductDetail() {
                 className="w-full max-w-sm mx-auto mb-4 rounded"
                 style={{objectFit: "cover"}}
             />
-            <p className="mb-2 text-gray-800"><span className="font-semibold">Price:</span> ${product.precio ?? product.price}</p>
+            <p className="mb-2 text-gray-800">
+                <span className="font-semibold">Price:</span> ${product.precio ?? product.price}
+            </p>
             <p className="mb-2 text-gray-600">{product.description}</p>
+            <p className="mb-2 text-gray-700">
+                <span className="font-semibold">Category:</span> {product.category}
+            </p>
+            <p className="mb-2 text-gray-700">
+                <span className="font-semibold">Stock:</span>{" "}
+                <span className={product.stock > 0 ? "text-green-600" : "text-red-500"}>
+                    {product.stock}
+                </span>
+            </p>
         </div>
     );
 }

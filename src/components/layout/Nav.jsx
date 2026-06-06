@@ -6,7 +6,7 @@ function Nav({ menuItems }) {
   return (<>
     <header className="sticky top-0 z-50 bg-primary-50/80 backdrop-blur border-b border-primary-200">
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-14">
-        <div className="font-semibold text-primary-800">Cristal Store</div>
+        <Link to="/" className="font-semibold text-primary-800">Cristal Store</Link>
 
         <nav className="hidden md:block">
           <ul className="flex items-center gap-2">

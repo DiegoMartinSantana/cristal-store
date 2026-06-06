@@ -7,7 +7,7 @@ function Layout() {
         <>
             <div className="min-h-screen flex flex-col">
                 <Header/>
-                <main className="flex-1 p-8 max-w-7xl mx-auto">{<Outlet />}</main>
+                <main className="flex-1 p-8 max-w-8xl ">{<Outlet />}</main>
                 <Footer/>
             </div>
         </>)
